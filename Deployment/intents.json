@@ -1,0 +1,90 @@
+{
+    "intents" : [
+    {
+          "tag" : "greetings",
+           "patterns" : ["hello"],
+           "responses" : ["Hello!"]
+    } ,
+    {
+        "tag" :"murder" ,
+        "patterns" : ["The culprit had killed two innocent kids" , "The man rithlessly assasinated the girl" ,"homicide is punishable","liquidation a serious threat ","patricide"],
+        "responses" : ["Under Section 302, punishment for murder includes the death penalty or life imprisonment with a fine. Under Section 304, punishment includes imprisonment for life or imprisonment for a term of ten years and fine or rigorous imprisonment depending on the gravity of the offence."] 
+    } ,
+    {
+        "tag" : "corrupt", 
+        "patterns" : ["domestic violence to women ","harassment","complaint for the crime of adultery","Women were excluded from prosecution, however. When a married man engaged in sexual intercourse with an unmarried woman, section 497 IPC was inapplicable. CrPC set out in Section 198(2) how a complainant can file charges for offences committed under IPC Sections 497 and 498."],
+        "responses" : ["section 302 (abetment to suicide) is exception to this decriminalisation, i.e. if the act of adultery of one partner, becomes the reason of suicide for the other partner, than adultery will be criminalised. Cruelty, under section 498A, will cover the mental trauma caused to a woman by the adulterous relationship of a husband, along with the definition of domestic violence under the Domestic Violence Act, 2005."]
+    },
+    {
+        "tag" :"accident" ,
+        "patterns" : ["claim in Motor Accident Claim Tribunal (MACT)"," death of a person in a road accident","two wheelers accident" ,"neglecting traffic rules" ,"driving when drunk","crossing the speed limit of the road"],
+        "responses" : [" the victim was not remediless as, section 120B was applicable,article 142 of the Constitution, states that the substantive procedure set by one statute cannot be ignored by another. This case, is a case of professional misconduct and should have been dealt by disciplinary committee of Bar Council."]
+    },
+    {
+        "tag" : "insult" ,
+        "patterns" : ["the offense of criminal defamation","insult a person by gender ,caste ,creed ,religion" ,"harass a person against ethics"], 
+        "responses" : ["Section 499 and 500 of IPC,Section 199(1) to 199(4) of CrPC,Article 19(1)(a) of Indian Constitution.The reasonableness and proportionality of a restriction shall be examined from the point of view of the general public’s interest and not from the point of view of the person to whom the limitation is imposed."]
+    },
+    {
+        "tag" : "property" ,
+        "patterns" : [" the succession of property by a Will or Testament" ,"family property sharing" ,"rivalry between family members for heir determination","will or testament "],
+        "responses" : ["compliance with the rule of inheritance - Section 6(5) of the Amendment Act could not be recognized as a notional partition"]
+    }, 
+    {
+        "tag" : "death penalty" , 
+        "patterns" : ["Waging war against the government of India (Sec 121)","Abetting mutually actually committed (Sec 132)","Giving or fabricating false evidence upon which an innocent person suffers death (Sec 194)","Murder (Sec 302)"], 
+        "responses" : ["sentenced to death - non bailable "] 
+    },
+    {
+        "tag" : "kill" ,
+        "patterns" : ["Murder by life convicts (Sec 303)" ,"Abetment of suicide of a minor or an insane or intoxicated person (Sec 305)","Dacoity accompanied with murder (Sec 396)","Kidnapping for ransom (Sec 364A)"], 
+        "responses" : ["Sec 53 of the Indian Penal Code punishes with a death penalty"]
+    }, 
+    {
+        "tag" : "life long penalty" ,
+        "patterns" : ["House breaking in order to commit offence (Sec 449)" ,"Robbery (Sec 392)" ,"Dacoity (Sec 395)","Kidnapping in order to murder (Sec 364)"],
+        "responses" : ["a punishment of simple imprisonment with death  (Sec 395)"]
+    }, 
+    {
+        "tag" : "severe insults" , 
+        "patterns" : ["Wrongful Restraint (Sec 341)" , "Uttering any word or making any sound or gesture with an intention to insult the modesty of a women (Sec 509)" ,"Misconduct in a public place by a drunken person (Sec 510)","Defamation (Sec 500,501,502)","Criminal misappropriation of property (Sec 403)"],
+        "responses" : ["Simple Imprisonment with a fine according to the severity"]
+     }, 
+     {
+        "tag" : "Forfeiture Of Property" , 
+        "patterns" : ["Under Section 126 for committing depredation on territories of power at peace with government of India.","Under Section 127 for receiving property taken during war or depredation mentioned in section 126 of IPC."],
+        "responses" : ["forfeiture of property along with extra fine . If there is a loss of life there would be a imprisonment "]
+     },
+     {
+        "tag" :"provision of adultered food" , 
+        "patterns" : ["death of a person due to food poisoning" , "A group joined hospital for treatment due to spoiled food of X company","provision of unhygenic food"] ,
+        "responses" : ["Section 54 of the Food Safety and Standards Act, 2006, deals with a penalty of a maximum of one lakh rupees in cases where any extraneous or inappropriate matter is found in food"]
+     },
+     {
+        "tag" : "claim for loss of property " ,
+        "patterns" : ["lives lost due to cyclone" ,"home desturcted due to earthquake" ,"terrible disaster affected more than 10 lives"],
+        "responses" : ["ranting relief to people suffering from disaster according to disaster management 2005"]
+     },
+     {
+        "tag" : "plagiarism" ,
+        "patterns" : ["person copied software and sold it to another for money","copied the logo ","looted details to gain profit"],
+        "responses" : ["Section 57 of the 'Indian Copyright Act' allows the author an exclusive right. It offers the author protection against any unauthorized use of his work, including plagiarism. Section 63 of the act considers copyright infringement as a criminal offense. The punishment is imprisonment for 6 months to 3 years."]
+     },
+     {
+        "tag" : "emotional damage" ,
+        "patterns" : ["making a person mentally weak by blackmailing on social media ","taking the identity of others and misutilizing his credits","extortion","demand for money or other personal details"],
+        "responses" : ["Criminal intimidation, as per the Indian Penal Code Section 503 -  punished with imprisonment of either description for the term which may extend to three years , or with fine , or with both"]
+     }, 
+     {
+        "tag" : "theft", 
+        "patterns" : ["robbery of around 25lakhs" ,"gang tried to loot the bank ", "burglar peeped into room for necklace" ,"theft got encountered"] ,
+        "responses" : ["imprisonment of either description for a term which may extend to three years, or with fine, or with both."] 
+     }, 
+     {
+        "tag" : "land" ,
+        "patterns" : ["land encrochment","land grabbing","illegal occupancy of government land" ,"fight for land measurement"],
+        "responses" : ["imprisonment for a term which may extend to six months or with fine which may extend to one thousand rupees or with both"]
+     }
+
+    ]
+}

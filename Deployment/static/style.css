@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 9vh;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input, textarea, .input-group-text {
+    color: antiquewhite!important;
+    background: rgba( 21, 21, 19, 0 )!important;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 9px );
+    -webkit-backdrop-filter: blur( 9px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 )!important;
+}
+
+.btn:hover {
+    color: var(--bs-btn-hover-color)!important;
+    background-color: var(--bs-btn-hover-bg)!important;
+    border-color: var(--bs-btn-hover-border-color)!important;
+}
+
+textarea::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+	border-radius: 10px;
+}
+
+textarea::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+textarea::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, rgb(122,153,217)), color-stop(0.72, rgb(73,125,189)), color-stop(0.86, rgb(28,58,148)));
+}
+
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+	border-radius: 10px;
+}
+
+body::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, rgb(122,153,217)), color-stop(0.72, rgb(73,125,189)), color-stop(0.86, rgb(28,58,148)));
+}
+
+.navbar {
+    background: rgba( 21, 21, 19, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 9px );
+    -webkit-backdrop-filter: blur( 9px );
+    border-radius: 10px;
+}
+
+#Home {
+    background-color: blueviolet;
+    background-image: url(./assets/bg-home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    & p {
+        font-family: ui-sans-serif;
+        color: antiquewhite;
+        font-size: xxx-large;
+        text-align: center;
+        background: rgba( 21, 21, 19, 0.2 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 9px );
+        -webkit-backdrop-filter: blur( 9px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        width: 60vw;
+        margin-inline: auto;
+    }
+}
+
+/*-------------------------------predict--------------------------------*/
+
+.predict{
+    justify-content: space-around;
+    background-image: linear-gradient(to right, #A6C0FE, #F68084);
+    align-items: center;
+    font-family: roboto;
+
+    & div {
+        width: 25em;
+    }
+}
+
+#petitionerName{
+    width:15vw;
+    margin-bottom:20px;
+}
+
+#respondentName{
+    width:15vw;
+    margin-bottom:20px;
+}
+
+#factsCollected{
+    margin-bottom:20px;
+}
+
+.output-img{
+    margin-bottom: 1em;
+    border-radius: 1em;
+    max-width: 22em;
+    max-height: 16rem;
+}
+
+#Verdict {
+    flex-direction: row;
+    background-image: url(./assets/verdict-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    & #input, #output {
+        background: rgba( 21, 21, 19, 0.2 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 9px );
+        -webkit-backdrop-filter: blur( 9px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        padding: 10px 20px;
+        color: white;
+    }
+}
+/*-------------------------------predict--------------------------------*/
+
+/*-------------------------------registratin--------------------------------*/
+
+#registration{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-image:url(./assets/register-bg.jpg);
+    background-size: cover;
+
+    & legend {
+        font-family:'Times New Roman', Times, serif;
+        font-weight: 600;
+        letter-spacing: 5pt;
+    }
+
+    & .reg-card{
+        background: rgba( 21, 21, 19, 0.2 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 9px );
+        -webkit-backdrop-filter: blur( 9px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        border-radius: 20px; 
+        width: 60vw;
+        justify-content: space-around;
+        color: antiquewhite;
+
+        & label {
+            font-weight: 700;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    }
+}
+
+#docket {
+    padding: 40px 40px;
+    justify-content: flex-start;
+    align-items: stretch;
+    background-image: url(./assets/docket-bg.jpg);
+
+    & h2 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: 700;
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        letter-spacing: 4pt;
+        text-align: center;
+        color: antiquewhite;
+    }
+
+    & .table {
+        background: rgba( 21, 21, 19, 0.2 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.3 );
+        backdrop-filter: blur( 9px );
+        -webkit-backdrop-filter: blur( 9px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+
+    & .table>:not(caption)>*>* {
+        background: none;
+        color: antiquewhite;
+    }
+
+    & div {
+        overflow-x: hidden;
+        overflow-y: auto;
+        max-height: 70vh;
+
+        &::-webkit-scrollbar {
+            width: 0.5em;
+        }
+        &::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: darkgrey;
+            outline: 1px solid slategrey;
+        }
+        &::-webkit-scrollbar-thumb:hover {
+            background-color: #555;
+        }
+    }
+}
+
+#instructions {
+    background-image: url(./assets/instructions-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: antiquewhite;
+
+    & h2 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: 700;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        letter-spacing: 4pt;
+    }
+
+    & p {
+        width: 60vw;
+        padding: 20px;
+        text-align: justify;
+        background: rgba( 21, 21, 19, 0.5 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 9px );
+        -webkit-backdrop-filter: blur( 9px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+}
+
+#contactUs {
+    background-image: url(./assets/contactUs-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: antiquewhite;
+
+    & div {
+        width: 50vw;
+        padding: 10px 20px;
+        background: rgba( 21, 21, 19, 0.2 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 9px );
+        -webkit-backdrop-filter: blur( 9px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+        & legend {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 700;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-align: center;
+            letter-spacing: 3pt;
+        }
+
+        & label {
+            font-weight: 600;
+            letter-spacing: 1pt;
+        }
+    }
+}
